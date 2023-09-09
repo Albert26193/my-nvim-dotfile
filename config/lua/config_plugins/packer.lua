@@ -55,6 +55,8 @@ packer.startup({
 		use("numToStr/Comment.nvim")
 		-- nvim-autopairs
 		use("windwp/nvim-autopairs")
+		-- clip remote
+		use({ "ojroques/nvim-osc52" })
 	end,
 	config = {
 		-- 并发数限制

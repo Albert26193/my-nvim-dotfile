@@ -30,6 +30,8 @@ else
 	require("config_plugins.lualine")
 	-- formatter
 	require("config_plugins.formatter")
+	-- remote clip
+	require("config_plugins.osc52")
 	--hover
 	require("config_plugins.hover")
 	require("config_plugins.trouble")
