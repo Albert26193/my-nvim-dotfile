@@ -3,7 +3,6 @@ if not status then
 	vim.notify("没有找到 nvim-treesitter")
 	return
 end
-
 treesitter.setup({
 	-- 安装 language parser
 	-- :TSInstallInfo 命令查看支持的语言
@@ -50,24 +49,21 @@ treesitter.setup({
 		extended_mode = true, -- Also highlight non-bracket delimiters like html tags, boolean or table: lang -> boolean
 		max_file_lines = nil, -- Do not enable for files with more than n lines, int
 		colors = {
-			"#95ca60",
-			"#ee6985",
 			"#D6A760",
+			"#95ca60",
 			"#7794f4",
 			"#b38bf5",
 			"#7cc7fe",
 		}, -- table of hex strings
 		termcolors = {
-			"#95ca60",
-			"#ee6985",
 			"#D6A760",
+			"#95ca60",
 			"#7794f4",
 			"#b38bf5",
 			"#7cc7fe",
 		}, -- table of colour name strings
 	},
 })
-
 -- 开启 Folding 模块
 vim.opt.foldmethod = "expr"
 vim.opt.foldexpr = "nvim_treesitter#foldexpr()"

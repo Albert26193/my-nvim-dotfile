@@ -1,6 +1,6 @@
 -- utf8
 vim.g.encoding = "UTF-8"
-vim.o.fileencoding = 'utf-8'
+vim.o.fileencoding = "utf-8"
 
 -- jkhl 移动时光标周围保留8行
 vim.o.scrolloff = 8
@@ -58,11 +58,11 @@ vim.bo.autoread = true
 -- 开启折行
 vim.wo.wrap = true
 vim.wo.linebreak = true
-vim.wo.list =false
+vim.wo.list = false
 vim.bo.textwidth = 100
 
 -- 光标在行首尾时<Left><Right>可以跳到下一行
-vim.o.whichwrap = '<,>,[,]'
+vim.o.whichwrap = "<,>,[,]"
 
 -- 允许隐藏被修改过的buffer
 vim.o.hidden = true
@@ -87,7 +87,7 @@ vim.o.splitright = true
 
 -- 自动补全不自动选中
 -- vim.opt.completeopt = "menu,menuone,preview"
-vim.opt.completeopt = {'menuone'}
+vim.opt.completeopt = { "menuone" }
 
 -- 样式
 vim.o.background = "dark"
@@ -102,7 +102,7 @@ vim.opt.termguicolors = true
 vim.o.wildmenu = true
 
 -- Dont' pass messages to |ins-completin menu|
-vim.o.shortmess = vim.o.shortmess .. 'c'
+vim.o.shortmess = vim.o.shortmess .. "c"
 
 -- 补全最多显示10行
 vim.o.pumheight = 10
@@ -114,5 +114,4 @@ vim.o.pumheight = 10
 vim.o.showmode = false
 
 -- clipboard
-vim.opt.clipboard = "unnamed"
-
+-- vim.opt.clipboard = "unnamed"

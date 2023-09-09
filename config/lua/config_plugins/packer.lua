@@ -6,7 +6,6 @@ packer.startup({
 		-- Packer 可以管理自己本身
 		use("wbthomason/packer.nvim")
 		--------------------- LSP --------------------
-		-- use("williamboman/nvim-lsp-installer")
 		-- manson
 		use({ "williamboman/mason.nvim" })
 		-- Lspconfig
@@ -22,7 +21,7 @@ packer.startup({
 		use("hrsh7th/cmp-buffer")
 		use("hrsh7th/cmp-path")
 		use("hrsh7th/cmp-cmdline")
-		-- 常见编程语言代码段
+		-- snippet
 		use("rafamadriz/friendly-snippets")
 		-- formatter
 		use({ "mhartington/formatter.nvim" })
@@ -32,7 +31,7 @@ packer.startup({
 		use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
 		use({ "folke/trouble.nvim", ependencies = { "nvim-tree/nvim-web-devicons" } })
 		-- nvim rainbow delimiter
-		use({ "hiphish/rainbow-delimiters.nvim" })
+		use({ "p00f/nvim-ts-rainbow" })
 		-- hop
 		use({ "phaazon/hop.nvim", branch = "v2" })
 		-- status line
@@ -41,7 +40,7 @@ packer.startup({
 			requires = { "kyazdani42/nvim-web-devicons" },
 		})
 		use("arkav/lualine-lsp-progress")
-		-- 主题
+		-- theme
 		use("overcache/neosolarized")
 		use("folke/tokyonight.nvim")
 		-- accelerated-jk
