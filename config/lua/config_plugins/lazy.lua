@@ -12,6 +12,7 @@ lazy.setup({
 		-- event = 'VeryLazy',
 		dependencies = {
 			"hrsh7th/cmp-nvim-lsp",
+			"hrsh7th/vim-vsnip",
 			"onsails/lspkind-nvim",
 			"hrsh7th/cmp-path",
 			"hrsh7th/cmp-buffer",
@@ -36,4 +37,5 @@ lazy.setup({
 	{ "windwp/nvim-autopairs" },
 	{ "lewis6991/hover.nvim" },
 	{ "folke/trouble.nvim", ependencies = { "nvim-tree/nvim-web-devicons" } },
+	{ "ojroques/nvim-osc52" },
 })
