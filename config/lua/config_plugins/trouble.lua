@@ -15,8 +15,8 @@ trouble.setup({
 	group = true, -- group results by file
 	padding = true, -- add an extra new line on top of the list
 	cycle_results = true, -- cycle item list when reaching beginning or end of list
-	action_keys = { -- key mappings for actions in the trouble list
-		hover = "K", -- opens a small popup with the full multiline message
-		multiline = true, -- render multi-line messages
-	},
 })
+
+vim.keymap.set("n", "E", function()
+	require("trouble").toggle()
+end)

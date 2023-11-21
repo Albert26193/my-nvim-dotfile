@@ -49,15 +49,15 @@ treesitter.setup({
 		extended_mode = true, -- Also highlight non-bracket delimiters like html tags, boolean or table: lang -> boolean
 		max_file_lines = nil, -- Do not enable for files with more than n lines, int
 		colors = {
-			"#D6A760",
-			"#95ca60",
+			"#55ca60",
+			"#a6a760",
 			"#7794f4",
 			"#b38bf5",
 			"#7cc7fe",
 		}, -- table of hex strings
 		termcolors = {
-			"#D6A760",
-			"#95ca60",
+			"#55ca60",
+			"#a6a760",
 			"#7794f4",
 			"#b38bf5",
 			"#7cc7fe",
