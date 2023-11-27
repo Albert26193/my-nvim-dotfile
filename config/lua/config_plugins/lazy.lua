@@ -23,6 +23,7 @@ lazy.setup({
 			"rafamadriz/friendly-snippets",
 		},
 	},
+	{ "ojroques/nvim-osc52" },
 	{ "mhartington/formatter.nvim" },
 	{ "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
 	-- rainbow
