@@ -1,24 +1,24 @@
+-- install lazy nvim plugin manager
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not vim.loop.fs_stat(lazypath) then
+	vim.fn.system({
+		"git",
+		"clone",
+		"--filter=blob:none",
+		"https://github.com/folke/lazy.nvim.git",
+		"--branch=stable", -- latest stable release
+		lazypath,
+	})
+end
+
+vim.opt.rtp:prepend(lazypath)
 if vim.g.vscode then
 	require("vscode_nvim.vs-basic")
 	require("vscode_nvim.vs-keybinding")
+	require("vscode_nvim.vs-lazy")
 	require("vscode_nvim.vs-hop")
 	require("vscode_nvim.vs-comment")
 else
-	-- install lazy nvim plugin manager
-	local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-	if not vim.loop.fs_stat(lazypath) then
-		vim.fn.system({
-			"git",
-			"clone",
-			"--filter=blob:none",
-			"https://github.com/folke/lazy.nvim.git",
-			"--branch=stable", -- latest stable release
-			lazypath,
-		})
-	end
-
-	vim.opt.rtp:prepend(lazypath)
-
 	-- 基本配置
 	require("config_general.basic")
 	-- 插件配置
