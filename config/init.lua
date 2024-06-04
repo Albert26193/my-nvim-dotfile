@@ -15,9 +15,9 @@ vim.opt.rtp:prepend(lazypath)
 if vim.g.vscode then
 	require("vscode_nvim.vs-basic")
 	require("vscode_nvim.vs-keybinding")
-	-- require("vscode_nvim.vs-lazy")
+	require("vscode_nvim.vs-lazy")
 	require("vscode_nvim.vs-hop")
-	require("vscode_nvim.vs-comment")
+	-- require("vscode_nvim.vs-comment")
 else
 	-- 基本配置
 	require("config_general.basic")
