@@ -38,5 +38,5 @@ lazy.setup({
 	{ "windwp/nvim-autopairs" },
 	{ "lewis6991/hover.nvim" },
 	{ "folke/trouble.nvim", ependencies = { "nvim-tree/nvim-web-devicons" } },
-	{ "ojroques/nvim-osc52" },
+	{ "norcalli/nvim-colorizer.lua" },
 })

@@ -1,12 +1,12 @@
 -- utf8
 vim.g.encoding = "UTF-8"
-vim.o.fileencoding = 'utf-8'
+vim.o.fileencoding = "utf-8"
 
 print("this is the file for code")
 
 -- jkhl 移动时光标周围保留8行
-vim.o.scrolloff = 10
-vim.o.sidescrolloff = 10
+vim.o.scrolloff = 4
+vim.o.sidescrolloff = 4
 
 -- 使用相对行号
 -- vim.wo.number = true
@@ -110,4 +110,3 @@ vim.o.wildmenu = true
 
 -- 使用增强状态栏插件后不再需要 vim 的模式提示
 --vim.o.showmode = false
-

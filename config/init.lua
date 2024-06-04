@@ -15,7 +15,7 @@ vim.opt.rtp:prepend(lazypath)
 if vim.g.vscode then
 	require("vscode_nvim.vs-basic")
 	require("vscode_nvim.vs-keybinding")
-	require("vscode_nvim.vs-lazy")
+	-- require("vscode_nvim.vs-lazy")
 	require("vscode_nvim.vs-hop")
 	require("vscode_nvim.vs-comment")
 else
@@ -27,6 +27,8 @@ else
 	require("config_plugins.cmp")
 	-- manson
 	require("config_plugins.mason")
+	-- colorizer
+	require("config_plugins.colorizer")
 	-- auto pair
 	require("config_plugins.auto_pair")
 	-- comment
