@@ -39,4 +39,5 @@ lazy.setup({
 	{ "lewis6991/hover.nvim" },
 	{ "folke/trouble.nvim", ependencies = { "nvim-tree/nvim-web-devicons" } },
 	{ "norcalli/nvim-colorizer.lua" },
+  { 'echasnovski/mini.nvim', version = '*' },
 })

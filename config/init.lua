@@ -17,7 +17,6 @@ if vim.g.vscode then
 	require("vscode_nvim.vs-keybinding")
 	require("vscode_nvim.vs-lazy")
 	require("vscode_nvim.vs-hop")
-	-- require("vscode_nvim.vs-comment")
 else
 	-- 基本配置
 	require("config_general.basic")
@@ -46,7 +45,9 @@ else
 	--hover
 	require("config_plugins.hover")
 	require("config_plugins.trouble")
-	-- -- indent_blankline
+	--mini.ai
+	require("config_plugins.miniai")
+	-- indent_blankline
 	require("config_plugins.indent_blankline")
 	-- 主题设置
 	require("config_general.colorscheme")
