@@ -5,9 +5,9 @@ if not status then
 end
 
 vim.keymap.set({ "n", "x", "o" }, "r", '<cmd>lua require("flash").jump()<cr>')
-vim.keymap.set({ "n", "x", "o" }, "w", '<cmd>lua require("flash").treesitter()<cr>')
+-- vim.keymap.set({ "n", "x", "o" }, "w", '<cmd>lua require("flash").treesitter()<cr>')
 -- vim.keymap.set({ "n", "x", "o" }, "R", '<cmd>lua require("flash").remote()<cr>')
-vim.keymap.set({ "n", "x", "o" }, "R", '<cmd>lua require("flash").treesitter_search()<cr>')
+-- vim.keymap.set({ "n", "x", "o" }, "R", '<cmd>lua require("flash").treesitter_search()<cr>')
 -- vim.keymap.set({ "c" }, "<c-s>", '<cmd>lua require("flash").toggle()<cr>')
 
 require("flash").setup({
@@ -31,4 +31,3 @@ require("flash").setup({
 		},
 	},
 })
-
