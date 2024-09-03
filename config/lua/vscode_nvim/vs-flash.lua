@@ -27,7 +27,17 @@ require("flash").setup({
 			multi_line = false,
 			jump_labels = false,
 			config = {},
+			highlight = { backdrop = false },
 			-- autohide = true,
+		},
+	},
+	highlight = {
+		backdrop = false,
+		matches = true,
+		priority = 5000,
+		groups = {
+			label = "IncSearch", -- :hi for f/F
+			match = "Substitute", -- :hi for f/F
 		},
 	},
 })
