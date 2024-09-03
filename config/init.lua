@@ -16,11 +16,12 @@ if vim.g.vscode then
 	require("vscode_nvim.vs-basic")
 	require("vscode_nvim.vs-keybinding")
 	require("vscode_nvim.vs-lazy")
-	require("vscode_nvim.vs-hop")
+	require("vscode_nvim.vs-flash")
+-- require("vscode_nvim.vs-hop")
 else
-	-- 基本配置
+	-- basic
 	require("config_general.basic")
-	-- 插件配置
+	-- lazy(plugin manger)
 	require("config_plugins.lazy")
 	-- cmp
 	require("config_plugins.cmp")
@@ -35,7 +36,9 @@ else
 	-- nvim-treesitter
 	require("config_plugins.nvim_treesitter")
 	-- hop
-	require("config_plugins.hop")
+	-- require("config_plugins.hop")
+	-- leap
+	require("config_plugins.flash")
 	-- lualine
 	require("config_plugins.lualine")
 	-- formatter
@@ -49,9 +52,9 @@ else
 	require("config_plugins.miniai")
 	-- indent_blankline
 	require("config_plugins.indent_blankline")
-	-- 主题设置
+	-- color theme
 	require("config_general.colorscheme")
-	-- 快捷键
+	-- shortcut
 	require("config_general.keybindings")
 	-- lsp default config
 	require("config_lsp.lsp_config")

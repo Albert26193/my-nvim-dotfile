@@ -4,6 +4,12 @@ lazy.setup({
 	{ "numToStr/Comment.nvim" },
 	{ "rainbowhxch/accelerated-jk.nvim" },
 	{ "phaazon/hop.nvim", branch = "v2" },
+	{
+		"folke/flash.nvim",
+		event = "VeryLazy",
+		-- ---@type Flash.Config
+		-- opts = {},
+	},
 })
 
 -- vim.api.nvim_set_keymap("n", "j", "<Plug>(accelerated_jk_gj)", {})

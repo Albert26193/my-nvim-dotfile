@@ -18,7 +18,7 @@ lazy.setup({
 			"hrsh7th/cmp-buffer",
 			"hrsh7th/cmp-omni",
 			"hrsh7th/cmp-emoji",
-			"hrsh7th/cmp-cmdline",
+			-- "hrsh7th/cmp-cmdlie",
 			"quangnguyen30192/cmp-nvim-ultisnips",
 			"rafamadriz/friendly-snippets",
 		},
@@ -30,24 +30,16 @@ lazy.setup({
 	{ "hiphish/rainbow-delimiters.nvim" },
 	-- theme
 	{ "folke/tokyonight.nvim" },
-	{ "sainnhe/sonokai" },
-	{ "Shatur/neovim-ayu" },
-	{
-		"Tsuzat/NeoSolarized.nvim",
-		lazy = false, -- make sure we load this during startup if it is your main colorscheme
-		priority = 1000, -- make sure to load this before all the other start plugins
-		-- config = function()
-		-- 	vim.cmd([[ colorscheme NeoSolarized ]])
-		-- end,
-	},
-	{ "ellisonleao/gruvbox.nvim", priority = 1000, config = true, opts = ... },
+	-- { "sainnhe/sonokai" },
+	-- { "Shatur/neovim-ayu" },
+	-- { "ellisonleao/gruvbox.nvim", priority = 1000, config = true, opts = ... },
 	{ "nvim-lualine/lualine.nvim", dependencies = { "kyazdani42/nvim-web-devicons" } },
 	-- lsp
 	{ "arkav/lualine-lsp-progress" },
 	{ "numToStr/Comment.nvim" },
 	{ "rainbowhxch/accelerated-jk.nvim" },
 	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
-	{ "phaazon/hop.nvim", branch = "v2" },
+	-- { "phaazon/hop.nvim", branch = "v2" },
 	{ "windwp/nvim-autopairs" },
 	{ "lewis6991/hover.nvim" },
 	{ "folke/trouble.nvim", ependencies = { "nvim-tree/nvim-web-devicons" } },
@@ -62,8 +54,20 @@ lazy.setup({
 			"SmiteshP/nvim-navic",
 			"nvim-tree/nvim-web-devicons", -- optional dependency
 		},
-		opts = {
-			-- configurations go here
-		},
+	},
+	-- flash
+	{
+		"folke/flash.nvim",
+		event = "VeryLazy",
+		-- ---@type Flash.Config
+		-- opts = {},
+		-- stylua: ignore
+		-- keys = {
+		--   { "w", mode = { "n", "x", "o" }, function() require("flash").jump() end, desc = "Flash" },
+		--   { "W", mode = { "n", "x", "o" }, function() require("flash").treesitter() end, desc = "Flash Treesitter" },
+		--   { "r", mode = "o", function() require("flash").remote() end, desc = "Remote Flash" },
+		--   { "R", mode = { "o", "x" }, function() require("flash").treesitter_search() end, desc = "Treesitter Search" },
+		--   { "<c-s>", mode = { "c" }, function() require("flash").toggle() end, desc = "Toggle Flash Search" },
+		-- },
 	},
 })

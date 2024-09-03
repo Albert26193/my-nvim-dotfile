@@ -30,7 +30,7 @@ treesitter.setup({
 	},
 	-- 启用增量选择模块
 	incremental_selection = {
-		enable = true,
+		enable = false,
 		keymaps = {
 			init_selection = "<CR>",
 			node_incremental = "<CR>",

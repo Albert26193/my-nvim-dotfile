@@ -1,11 +1,11 @@
+-- place this in one of your configuration file(s)
+-- local directions = require('hop.hint').HintDirection
+
 local status, hop = pcall(require, "hop")
 if not status then
 	vim.notify("没有找到 hop")
 	return
 end
-
--- place this in one of your configuration file(s)
--- local directions = require('hop.hint').HintDirection
 
 hop.setup({
 	keys = "etovxqpdygfblzhckisuran",
