@@ -28,8 +28,21 @@ lazy.setup({
 	{ "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
 	-- rainbow
 	{ "hiphish/rainbow-delimiters.nvim" },
+	-- theme
 	{ "folke/tokyonight.nvim" },
+	{ "sainnhe/sonokai" },
+	{ "Shatur/neovim-ayu" },
+	{
+		"Tsuzat/NeoSolarized.nvim",
+		lazy = false, -- make sure we load this during startup if it is your main colorscheme
+		priority = 1000, -- make sure to load this before all the other start plugins
+		-- config = function()
+		-- 	vim.cmd([[ colorscheme NeoSolarized ]])
+		-- end,
+	},
+	{ "ellisonleao/gruvbox.nvim", priority = 1000, config = true, opts = ... },
 	{ "nvim-lualine/lualine.nvim", dependencies = { "kyazdani42/nvim-web-devicons" } },
+	-- lsp
 	{ "arkav/lualine-lsp-progress" },
 	{ "numToStr/Comment.nvim" },
 	{ "rainbowhxch/accelerated-jk.nvim" },
@@ -39,5 +52,18 @@ lazy.setup({
 	{ "lewis6991/hover.nvim" },
 	{ "folke/trouble.nvim", ependencies = { "nvim-tree/nvim-web-devicons" } },
 	{ "norcalli/nvim-colorizer.lua" },
-  { 'echasnovski/mini.nvim', version = '*' },
+	{ "echasnovski/mini.nvim", version = "*" },
+	-- bread
+	{
+		"utilyre/barbecue.nvim",
+		name = "barbecue",
+		version = "*",
+		dependencies = {
+			"SmiteshP/nvim-navic",
+			"nvim-tree/nvim-web-devicons", -- optional dependency
+		},
+		opts = {
+			-- configurations go here
+		},
+	},
 })
