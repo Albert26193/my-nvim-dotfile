@@ -48,7 +48,7 @@ vim.o.smartcase = true
 -- vim.o.hlsearch = true
 
 -- 边输入边搜索
-vim.o.incsearch = true
+vim.o.incsearch = false
 
 -- 命令行高为2，提供足够的显示空间
 -- vim.o.cmdheight = 2
@@ -67,7 +67,7 @@ vim.o.incsearch = true
 -- vim.o.hidden = true
 
 -- 鼠标支持
-vim.o.mouse = "a"
+-- vim.o.mouse = "a"
 
 -- 禁止创建备份文件
 -- vim.o.backup = false
@@ -97,7 +97,7 @@ vim.o.mouse = "a"
 -- vim.o.listchars = "space:·"
 
 -- 补全增强
-vim.o.wildmenu = true
+-- vim.o.wildmenu = true
 
 -- Dont' pass messages to |ins-completin menu|
 -- vim.o.shortmess = vim.o.shortmess .. 'c'

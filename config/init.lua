@@ -17,6 +17,7 @@ if vim.g.vscode then
 	require("vscode_nvim.vs-keybinding")
 	require("vscode_nvim.vs-lazy")
 	require("vscode_nvim.vs-flash")
+	require("vscode_nvim.vs-yanky")
 -- require("vscode_nvim.vs-hop")
 else
 	-- basic
@@ -37,6 +38,8 @@ else
 	require("config_plugins.nvim_treesitter")
 	-- hop
 	-- require("config_plugins.hop")
+	-- yanky
+	require("config_plugins.yanky")
 	-- leap
 	require("config_plugins.flash")
 	-- lualine
@@ -53,7 +56,10 @@ else
 	-- indent_blankline
 	require("config_plugins.indent_blankline")
 	-- color theme
-	require("config_general.colorscheme")
+	-- require("config_colors.base16_mini")
+	-- require("config_colors.base16_solarized")
+	require("config_colors.base16_ayu")
+	-- require("config_colors.base16_github")
 	-- shortcut
 	require("config_general.keybindings")
 	-- lsp default config
