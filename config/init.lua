@@ -56,9 +56,9 @@ else
 	-- indent_blankline
 	require("config_plugins.indent_blankline")
 	-- color theme
-	-- require("config_colors.base16_mini")
+	require("config_colors.base16_mini")
 	-- require("config_colors.base16_solarized")
-	require("config_colors.base16_ayu")
+	-- require("config_colors.base16_ayu")
 	-- require("config_colors.base16_github")
 	-- shortcut
 	require("config_general.keybindings")
