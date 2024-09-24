@@ -13,4 +13,4 @@ hop.setup({
 })
 
 vim.notify("hop load!")
-vim.api.nvim_set_keymap("n", "w", ":HopChar1<CR>", {})
+vim.api.nvim_set_keymap("n", "r", ":HopChar1<CR>", {})

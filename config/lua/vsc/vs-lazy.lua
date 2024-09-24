@@ -3,7 +3,7 @@ local lazy = require("lazy")
 lazy.setup({
 	{ "numToStr/Comment.nvim" },
 	{ "rainbowhxch/accelerated-jk.nvim" },
-	{ "phaazon/hop.nvim", branch = "v2" },
+	{ "smoka7/hop.nvim", version = "*" },
 	{
 		"folke/flash.nvim",
 		event = "VeryLazy",

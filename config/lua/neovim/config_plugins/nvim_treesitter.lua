@@ -20,6 +20,7 @@ treesitter.setup({
 		"javascript",
 		"typescript",
 		"tsx",
+    "rust",
 	},
 	-- ensure_installed = "maintained",
 

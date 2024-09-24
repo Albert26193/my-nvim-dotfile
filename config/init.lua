@@ -13,57 +13,57 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 if vim.g.vscode then
-	require("vscode_nvim.vs-basic")
-	require("vscode_nvim.vs-keybinding")
-	require("vscode_nvim.vs-lazy")
-	require("vscode_nvim.vs-flash")
-	require("vscode_nvim.vs-yanky")
--- require("vscode_nvim.vs-hop")
+	require("vsc.vs-basic")
+	require("vsc.vs-keybinding")
+	require("vsc.vs-lazy")
+	require("vsc.vs-flash")
+	require("vsc.vs-yanky")
+	require("vsc.vs-hop")
 else
 	-- basic
-	require("config_general.basic")
+	require("neovim.config_general.basic")
 	-- lazy(plugin manger)
-	require("config_plugins.lazy")
+	require("neovim.config_plugins.lazy")
 	-- cmp
-	require("config_plugins.cmp")
+	require("neovim.config_plugins.cmp")
 	-- manson
-	require("config_plugins.mason")
+	require("neovim.config_plugins.mason")
 	-- colorizer
-	require("config_plugins.colorizer")
+	require("neovim.config_plugins.colorizer")
 	-- auto pair
-	require("config_plugins.auto_pair")
+	require("neovim.config_plugins.auto_pair")
 	-- comment
-	require("config_plugins.comment")
+	require("neovim.config_plugins.comment")
 	-- nvim-treesitter
-	require("config_plugins.nvim_treesitter")
+	require("neovim.config_plugins.nvim_treesitter")
 	-- hop
-	-- require("config_plugins.hop")
+	require("neovim.config_plugins.hop")
 	-- yanky
-	require("config_plugins.yanky")
+	require("neovim.config_plugins.yanky")
 	-- leap
-	require("config_plugins.flash")
+	require("neovim.config_plugins.flash")
 	-- lualine
-	require("config_plugins.lualine")
+	require("neovim.config_plugins.lualine")
 	-- formatter
-	require("config_plugins.formatter")
+	require("neovim.config_plugins.formatter")
 	-- remote clip
-	require("config_plugins.osc52")
+	require("neovim.config_plugins.osc52")
 	--hover
-	require("config_plugins.hover")
-	require("config_plugins.trouble")
+	require("neovim.config_plugins.hover")
+	require("neovim.config_plugins.trouble")
 	--mini.ai
-	require("config_plugins.miniai")
+	require("neovim.config_plugins.miniai")
 	-- indent_blankline
-	require("config_plugins.indent_blankline")
+	require("neovim.config_plugins.indent_blankline")
 	-- color theme
-	require("config_colors.base16_mini")
+	require("neovim.config_colors.base16_mini")
 	-- require("config_colors.base16_solarized")
 	-- require("config_colors.base16_ayu")
 	-- require("config_colors.base16_github")
 	-- shortcut
-	require("config_general.keybindings")
+	require("neovim.config_general.keybindings")
 	-- lsp default config
-	require("config_lsp.lsp_config")
+	require("neovim.config_lsp.lsp_config")
 end
 
 if vim.o.termguicolors then

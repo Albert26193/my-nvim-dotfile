@@ -48,6 +48,8 @@ lazy.setup({
 			"nvim-tree/nvim-web-devicons",
 		},
 	},
+	-- hop
+	{ "smoka7/hop.nvim", version = "*" },
 	-- flash
 	{
 		"folke/flash.nvim",
@@ -57,7 +59,7 @@ lazy.setup({
 	{
 		"gbprod/yanky.nvim",
 	},
-  --mini
+	--mini
 	{ "echasnovski/mini.nvim", version = "*" },
-  { 'echasnovski/mini.base16', version = "*" },
+	{ "echasnovski/mini.base16", version = "*" },
 })
