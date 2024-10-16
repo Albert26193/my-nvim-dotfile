@@ -37,7 +37,7 @@ require("flash").setup({
 		priority = 5000,
 		groups = {
 			match = "Search", -- :hi for f/F
-			label = "Search", -- :hi for f/F
+			label = "Substitute", -- :hi for f/F
 		},
 	},
 })

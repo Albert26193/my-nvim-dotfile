@@ -24,6 +24,7 @@ lazy.setup({
 	{ "ojroques/nvim-osc52" },
 	{ "mhartington/formatter.nvim" },
 	{ "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
+	{ "nvim-treesitter/nvim-treesitter-textobjects" },
 	-- rainbow
 	{ "hiphish/rainbow-delimiters.nvim" },
 	-- theme

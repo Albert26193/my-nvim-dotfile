@@ -36,6 +36,7 @@ else
 	require("neovim.config_plugins.comment")
 	-- nvim-treesitter
 	require("neovim.config_plugins.nvim_treesitter")
+	require("neovim.config_plugins.nvim_treesitter_textobjects")
 	-- hop
 	require("neovim.config_plugins.hop")
 	-- yanky
@@ -52,7 +53,7 @@ else
 	require("neovim.config_plugins.hover")
 	require("neovim.config_plugins.trouble")
 	--mini.ai
-	require("neovim.config_plugins.miniai")
+	-- require("neovim.config_plugins.miniai")
 	-- indent_blankline
 	require("neovim.config_plugins.indent_blankline")
 	-- color theme

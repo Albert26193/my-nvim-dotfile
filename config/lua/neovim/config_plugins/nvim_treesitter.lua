@@ -3,6 +3,7 @@ if not status then
 	vim.notify("没有找到 nvim-treesitter")
 	return
 end
+
 treesitter.setup({
 	-- 安装 language parser
 	-- :TSInstallInfo 命令查看支持的语言
@@ -20,7 +21,7 @@ treesitter.setup({
 		"javascript",
 		"typescript",
 		"tsx",
-    "rust",
+		"rust",
 	},
 	-- ensure_installed = "maintained",
 
@@ -29,7 +30,7 @@ treesitter.setup({
 		enable = true,
 		additional_vim_regex_highlighting = false,
 	},
-	-- 启用增量选择模块
+	-- 不gg启用增量选择模块
 	incremental_selection = {
 		enable = false,
 		keymaps = {
