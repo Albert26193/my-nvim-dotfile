@@ -19,6 +19,8 @@ if vim.g.vscode then
 	require("vsc.vs-flash")
 	require("vsc.vs-yanky")
 	require("vsc.vs-hop")
+	require("vsc.vs-nvim_treesitter")
+	require("vsc.vs-nvim_treesitter_textobjects")
 else
 	-- basic
 	require("neovim.config_general.basic")

@@ -4,6 +4,8 @@ lazy.setup({
 	{ "numToStr/Comment.nvim" },
 	{ "rainbowhxch/accelerated-jk.nvim" },
 	{ "smoka7/hop.nvim", version = "*" },
+	{ "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
+	{ "nvim-treesitter/nvim-treesitter-textobjects" },
 	{
 		"folke/flash.nvim",
 		event = "VeryLazy",
