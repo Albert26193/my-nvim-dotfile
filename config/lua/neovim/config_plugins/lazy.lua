@@ -63,4 +63,6 @@ lazy.setup({
 	--mini
 	{ "echasnovski/mini.nvim", version = "*" },
 	{ "echasnovski/mini.base16", version = "*" },
+	--caddy
+	{ "isobit/vim-caddyfile" },
 })
