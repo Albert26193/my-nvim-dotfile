@@ -2,7 +2,9 @@ local opts = { noremap = true, silent = true }
 local keymap = vim.api.nvim_set_keymap
 
 keymap("n", "<Tab>", ":Tabnext<CR>", opts)
-keymap("n", "<S-Tab>", ":Tabprev<CR>", opts)
+keymap("x", "<Tab>", ":Tabnext<CR>", opts)
+keymap("n", "<S-Tab>", "workbench.action.nextEditorInGroup", opts)
+keymap("x", "<S-Tab>", "workbench.action.nextEditorInGroup", opts)
 keymap("", "<Space>", "<Nop>", opts)
 
 -- Better window navigation
