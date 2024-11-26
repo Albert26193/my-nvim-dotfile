@@ -30,6 +30,13 @@ lazy.setup({
 	-- theme
 	{ "folke/tokyonight.nvim" },
 	{ "nvim-lualine/lualine.nvim", dependencies = { "kyazdani42/nvim-web-devicons" } },
+	-- log
+	{
+		"fei6409/log-highlight.nvim",
+		config = function()
+			require("log-highlight").setup({})
+		end,
+	},
 	-- lsp
 	{ "arkav/lualine-lsp-progress" },
 	{ "numToStr/Comment.nvim" },
