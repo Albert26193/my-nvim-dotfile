@@ -26,7 +26,7 @@ lazy.setup({
 	{ "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
 	{ "nvim-treesitter/nvim-treesitter-textobjects" },
 	-- rainbow
-	{ "hiphish/rainbow-delimiters.nvim" },
+	-- { "hiphish/rainbow-delimiters.nvim" },
 	-- theme
 	{ "folke/tokyonight.nvim" },
 	{ "nvim-lualine/lualine.nvim", dependencies = { "kyazdani42/nvim-web-devicons" } },

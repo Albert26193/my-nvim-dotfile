@@ -113,5 +113,6 @@ vim.o.pumheight = 10
 -- 使用增强状态栏插件后不再需要 vim 的模式提示
 vim.o.showmode = false
 
--- clipboard
--- vim.opt.clipboard = "unnamed"
+-- vim.o.foldmethod = 'marker'
+-- vim.o.foldmarker = '  ' -- 这里是两个空格
+
