@@ -1,5 +1,7 @@
 return {
-
+  ------------------------------------------------------------
+  ------------------------- extension ------------------------
+  ------------------------------------------------------------
   {
     "stevearc/conform.nvim",
     event = 'BufWritePre',
@@ -8,7 +10,6 @@ return {
         lua = { "stylua" },
         sh ={ "shfmt" },
       },
-
       -- These options will be passed to conform.format()
       format_on_save = {
         timeout_ms = 500,
@@ -18,6 +19,9 @@ return {
     }
   },
 
+  ------------------------------------------------------------
+  ------------------------- extension ------------------------
+  ------------------------------------------------------------
   { 
     "ojroques/nvim-osc52", 
     lazy = false ,
@@ -36,6 +40,10 @@ return {
     end
   },
 
+
+  ------------------------------------------------------------
+  ------------------------- extension ------------------------
+  ------------------------------------------------------------
   {
     "neovim/nvim-lspconfig",
     config = function()
@@ -43,6 +51,9 @@ return {
     end,
   },
 
+  ------------------------------------------------------------
+  ------------------------- extension ------------------------
+  ------------------------------------------------------------
   {
     "nvim-treesitter/nvim-treesitter",
     opts = {
@@ -52,7 +63,10 @@ return {
       },
     },
   },
-
+  
+  ------------------------------------------------------------
+  ------------------------- extension ------------------------
+  ------------------------------------------------------------
   {
     "HiPhish/rainbow-delimiters.nvim",
     lazy = false,
@@ -84,6 +98,9 @@ return {
     end,
   },
 
+  ------------------------------------------------------------
+  ------------------------- extension ------------------------
+  ------------------------------------------------------------
   { 
     "fei6409/log-highlight.nvim",
     ft = {'log', 'error', 'err', '0'},
@@ -91,4 +108,99 @@ return {
       extension = {'log', 'error', 'err', '0'},
     }
   },
+
+  ------------------------------------------------------------
+  ------------------------- extension ------------------------
+  ------------------------------------------------------------
+  {
+    "hrsh7th/nvim-cmp",
+    event = "InsertEnter",
+    dependencies = {
+      "hrsh7th/cmp-nvim-lsp",
+      "hrsh7th/vim-vsnip",
+      "onsails/lspkind-nvim",
+      "hrsh7th/cmp-path",
+      "hrsh7th/cmp-buffer",
+      -- "hrsh7th/cmp-omni",
+      -- "hrsh7th/cmp-emoji",
+      "hrsh7th/cmp-cmdline",
+      -- "quangnguyen30192/cmp-nvim-ultisnips",
+      -- "rafamadriz/friendly-snippets",
+    },
+    config = function()
+      local status, cmp = pcall(require, "cmp")
+      if not status then
+        vim.notify("not found nvim-cmp")
+        return
+      end
+      -- set keymap
+      cmp.setup({
+        preselect = cmp.PreselectMode.Item,
+        completion = {
+          completeopt = "menu,menuone,noinsert",
+        },
+        snippet = {
+          expand = function(args)
+            -- For `vsnip` users.
+            vim.fn["vsnip#anonymous"](args.body)
+          end,
+        },
+        sources = cmp.config.sources(
+          { { name = "nvim_lsp" }, },
+          { { name = "buffer" }, { name = "path" } }),
+        mapping = {
+          -- ["<leader>i"] = cmp.mapping(cmp.mapping.complete(), {"i", "c"}),
+          ["<Up>"] = cmp.mapping.select_prev_item(),
+          ["<Down>"] = cmp.mapping.select_next_item(),
+          ["<Tab>"] = cmp.mapping.confirm({
+            select = true,
+            behavior = cmp.ConfirmBehavior.Replace
+          }),
+          ["<CR>"] = cmp.mapping.confirm({
+            select = true,
+            behavior = cmp.ConfirmBehavior.Replace
+          }),
+        }
+      })
+      -- cmp.setup.cmdline("/", {
+      --   mapping = cmp.mapping.preset.cmdline(),
+      --   sources = {
+      --    { name = "buffer" },
+      --   },
+      -- })
+      -- -- cmdline mode
+      -- cmp.setup.cmdline(":", {
+      --   mapping = cmp.mapping.preset.cmdline(),
+      --   sources = cmp.config.sources({
+      --     { name = "path" },
+      --   }, {
+      --       { name = "cmdline" },
+      --     }),
+      -- })
+    end
+  },
+
+  ------------------------------------------------------------
+  ------------------------- extension ------------------------
+  ------------------------------------------------------------
+  {
+    "hrsh7th/cmp-cmdline",
+    event = "CmdlineEnter",
+    config = function()
+      local cmp = require "cmp"
+      cmp.setup.cmdline("/", {
+        mapping = cmp.mapping.preset.cmdline(),
+        sources = { { name = "buffer" } },
+      })
+      cmp.setup.cmdline(":", {
+        mapping = cmp.mapping.preset.cmdline(),
+        sources = cmp.config.sources({ { name = "path" } }, { { name = "cmdline" } }),
+        matching = { disallow_symbol_nonprefix_matching = false },
+      })
+    end,
+  },
+
+  ------------------------------------------------------------
+  ----------------------------- end --------------------------
+  ------------------------------------------------------------
 }

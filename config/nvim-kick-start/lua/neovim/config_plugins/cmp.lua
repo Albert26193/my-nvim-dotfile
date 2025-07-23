@@ -26,8 +26,6 @@ cmp.setup({
   mapping = {
     -- 出现补全
     ["<leader>i"] = cmp.mapping(cmp.mapping.complete(), {"i", "c"}),
-    -- 取消
-
     -- 上一个
     ["<Up>"] = cmp.mapping.select_prev_item(),
     -- 下一个

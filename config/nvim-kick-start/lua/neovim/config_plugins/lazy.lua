@@ -17,7 +17,7 @@ lazy.setup({
 			"hrsh7th/cmp-omni",
 			"hrsh7th/cmp-emoji",
 			"hrsh7th/cmp-cmdline",
-			"quangnguyen30192/cmp-nvim-ultisnips",
+			-- "quangnguyen30192/cmp-nvim-ultisnips",
 			"rafamadriz/friendly-snippets",
 		},
 	},
